@@ -95,7 +95,7 @@
 
 (defun language (&rest supported)
   (or (loop for lang in (languages)
-            do (when (find lang supported :test #'string-equal)))
+            thereis (find lang supported :test #'string-equal))
       (values (locale-language *fallback-locale*)
               :fallback)))
 
