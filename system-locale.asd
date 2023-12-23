@@ -12,4 +12,4 @@
                (:file "locale")
                (:file "documentation"))
   :depends-on (:documentation-utils
-               (:feature (:or :windows :win32 :win) :cffi)))
+               (:feature (:or :windows :win32 :win :nx) :cffi)))
