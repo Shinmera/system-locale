@@ -74,9 +74,10 @@
   (setf *locales* (list* locale (remove locale *locales* :test #'string-equal))))
 
 (defun discover-active-languages ()
+  #+nx (list (cffi:foreign-funcall "nxgl_language" :string))
+  #-nx
   (remove-duplicates
    (append (whenlet (a (getenv "LANGUAGE")) (split #\: a))
-           #+nx (cffi:foreign-funcall "nxgl_language" :string)
            (mapcar #'locale-language (discover-active-locales)))
    :test #'string-equal))
 
