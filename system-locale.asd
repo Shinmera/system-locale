@@ -4,7 +4,7 @@
   :author "Yukari Hafner <shinmera@tymoon.eu>"
   :maintainer "Yukari Hafner <shinmera@tymoon.eu>"
   :description "System locale and language discovery"
-  :homepage "https://github.com/Shinmera/system-language"
+  :homepage "https://shinmera.com/project/system-language"
   :serial T
   :components ((:file "package")
                (:file "toolkit")
