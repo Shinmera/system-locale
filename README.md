@@ -1,10 +1,4 @@
-## About System-Locale
-This library retrieves locale information configured on the system. This is helpful if you want to write applications and libraries that display messages in the user's native language.
+# This repository has [moved](https://shinmera.com/projects/system-locale)!
+Due to Microsoft's continued enshittification of the platform this repository has been moved to [Codeberg](https://shinmera.com/projects/system-locale) in August of 2025. It will not receive further updates or patches. **Issues and pull requests will not be looked at here either**, please submit your patches and issue tickets on Codeberg, or send them directly via good old email patches to [shirakumo@tymoon.eu](mailto:shirakumo@tymoon.eu).
 
-## How To
-Primarily you'll want to use the functions `locale` and `language` to retrieve the information. You can also `setf` them if you want to force a particular setting.
-
-    (system-locale:locale)   ; => "en_GB.UTF-8"
-    (system-locale:language) ; => "en"
-
-The functions `discover-active-locales` and `discover-active-languages` describe how the locale and language discovery is handled.
+Thanks.
